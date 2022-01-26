@@ -1,0 +1,7 @@
+.post {
+  border: rgb(112, 27, 27) 3px solid;
+  border-radius: 5px;
+  font-family: monospace;
+  background-color: rgb(48, 111, 167);
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+<h2>Welcome to Pauper's Reddit</h2>
+
+<button (click)="GetReddit()">Search Reddit</button>
+<div *ngIf="reddit && reddit.data && reddit.data.children">
+  <div class="post" *ngFor ="let child of reddit.data.children">
+    <h3>Post: {{child.data?.title}}</h3>
+    <p><img src="{{child.data?.thumbnail}}"/>Thumbnail</p>
+    <p><a href="{{child.data?.url}}">View Post</a>Link to post</p>
+  </div>
+</div>
